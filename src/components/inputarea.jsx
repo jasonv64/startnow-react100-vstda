@@ -28,7 +28,6 @@ class struct extends Component {
     }
     render() {
         return (
-            <li>
             <div className="col-md-6 li">
                 <div className="title">Add New Todo</div>
                 <div className="add-to-do">
@@ -49,7 +48,6 @@ class struct extends Component {
                     <button className="btn" className="create-todo" name="submit">Add</button>
                 </form>
             </div>
-            </li>
 
         );
     }

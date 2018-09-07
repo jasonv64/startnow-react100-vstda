@@ -28,13 +28,14 @@ class struct extends Component {
     }
     render() {
         return (
-            <div className="col-md-6 li">
-                <div className="title">Add New Todo</div>
+            <div className="col-md-6 li new-to-do">
+            <div className="panel panel-default"> 
+                <div className="title panel-heading">Add New Todo</div>
                 <div className="add-to-do">
                     <label className="label">I want to...</label>
-                    <textarea name="inputText" className="create-todo-text" value={this.state.inputText} onChange={this.handleText}></textarea>
+                    <textarea rows="1" name="inputText" className="create-todo-text" value={this.state.inputText} onChange={this.handleText}></textarea>
                 </div>
-                <div>
+                <div className="priority">
                     <label className="label">How much of a priority is this?</label>
                     <div className="select">
                         <select className="priority success create-todo-priority" value={this.props.priority} onChange={this.handleChange}>
@@ -44,9 +45,12 @@ class struct extends Component {
                         </select>
                     </div>
                 </div>
+                <div className="panel panel-footer">
                 <form onClick={this.handleSubmit}>
                     <button className="btn" className="create-todo" name="submit">Add</button>
                 </form>
+                </div>
+            </div>
             </div>
 
         );

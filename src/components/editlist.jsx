@@ -98,6 +98,7 @@ class EditList extends Component {
                         <textarea className="update-todo-text" value={this.props.item.inputText}
                             onChange={this.inputTextChange} />
                     </div>
+
                     <div className="row">
                         <div className="due-date" className="col-xs-6">
                             <label>Due Date</label>
@@ -123,7 +124,7 @@ class EditList extends Component {
             );
         } else {
             body = (
-                <div className="list-group-item li success">
+                <div className="list-group-item li success-li">
                     <input type="checkbox" className="checkbox" onChange={this.finishedItem} value="off" />
                     {this.props.item.inputText}
                     <button className="edit-todo" onClick={this.onClickEdit}>

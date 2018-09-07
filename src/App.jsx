@@ -82,7 +82,7 @@ class App extends Component {
       );
     }
     return (
-      <div className="container">
+      <div className="container app">
         <Header />
         <Inputarea addItem={this.addItem} />
         <List
@@ -95,6 +95,23 @@ class App extends Component {
           updatePriority={this.updatePriority}
           saveItem={this.saveItem}
         />
+        <div className="animate">
+          <ul className="shapes">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </div>
     );
   }

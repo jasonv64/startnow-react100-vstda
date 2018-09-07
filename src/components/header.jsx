@@ -5,7 +5,7 @@ export default class Header extends Component {
         return (
             <div>
                 <h1>Very Simple Todo App</h1>
-                <p>Track all of the things</p>
+                <p className="head-p">Track all of the things</p>
                 <hr />
             </div>
         );
